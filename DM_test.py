@@ -20,7 +20,6 @@ def DM_test(a,b):
     d=d.astype(np.float32)
     d_mean=np.abs(np.mean(d))
     d_std=np.sqrt(np.sum(d*d)/(d.shape[0]-1))
-    print(d_mean,d_std)
     if d_std==0:
         DM=1e5
     else:
